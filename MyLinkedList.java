@@ -85,6 +85,18 @@ public class MyLinkedList{
         return sb.toString();
     }
 
+    public void addFirst(Object element){
+        Node newnode = new Node(element);
+        if(head == null){
+            head = newnode;
+        }
+        else{
+            newnode.next = head;
+            head = newnode;
+
+        }
+    }
+    
     public static void main(String[] args) {
         MyLinkedList list = new MyLinkedList();
 
