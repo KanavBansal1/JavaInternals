@@ -93,10 +93,10 @@ public class MyLinkedList{
         else{
             newnode.next = head;
             head = newnode;
-
         }
+        size += 1;
     }
-    
+
     public static void main(String[] args) {
         MyLinkedList list = new MyLinkedList();
 
