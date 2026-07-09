@@ -34,7 +34,7 @@ public class MyLinkedList{
         size += 1;
     }
 
-    public int get(int index){
+    public Object get(int index){
         if(index < 0 || index >= size){
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
         }
@@ -42,7 +42,7 @@ public class MyLinkedList{
         for(int i = 0; i < index;i += 1){
             current = current.next;
         }
-        return (int)current.data;
+        return current.data;
     }
 
     public Object remove(int index){
